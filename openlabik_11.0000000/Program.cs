@@ -10,13 +10,7 @@ namespace openlabik_11._0000000
     {
         static void Main(string[] args)
         {
-            /*   Book LOTR = new Book();
-              LOTR.Title = "Lord Of The Rings";
-               LOTR.Pages = 576;
-               LOTR.Category = "Fantasy";
-               LOTR.Author = "J.R.R.Tolkien";
-               LOTR.ReleaseDate = 1954;
-               Console.WriteLine(LOTR.ToString());*/
+            
 
             Library schoolLibrary = new Library();
            
@@ -28,28 +22,16 @@ namespace openlabik_11._0000000
 
             schoolLibrary.StudentsList.Add("John");
             schoolLibrary.StudentsList.Add("Poul");
-            schoolLibrary.BooksList.Add("ucebnica1");
-            schoolLibrary.BooksList.Add("ucebnica2");
-            schoolLibrary.BooksList.Add("ucebnica3");
-            schoolLibrary.BooksList.Add("ucebnica4");
+            schoolLibrary.BooksList.Add(ucebnica1);
+            schoolLibrary.BooksList.Add(ucebnica2);
+            schoolLibrary.BooksList.Add(ucebnica3);
+            schoolLibrary.BooksList.Add(ucebnica4);
             schoolLibrary.NumberOfBooks = 4;
             schoolLibrary.NumberOfStudents = 2;
 
-            Console.WriteLine(ucebnica1.ToString());
-            Console.WriteLine(ucebnica2.ToString());
-            Console.WriteLine(ucebnica3.ToString());
-            Console.WriteLine(ucebnica4.ToString());
+            Console.WriteLine(schoolLibrary.ToString());
 
-            Book LOTR2 = new Book();
-            Console.WriteLine(LOTR2.ToString());
-            Console.WriteLine();
-
-            Book LOTR3 = new Book("Lord Of The Rings 3", 1536);
-            Console.WriteLine(LOTR3.ToString());
-
-            Book HOBIT = new Book("Hobit", 304, Book.categoryList[3], "J. R. R. Tolkien", 1937);
-            Console.WriteLine(HOBIT.ToString());
-
+           
            
 
         }

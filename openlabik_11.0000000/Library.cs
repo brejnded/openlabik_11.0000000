@@ -17,8 +17,9 @@ namespace openlabik_11._0000000
             get { return studentsList; }
             set { studentsList = value; }
         }
-        private List<string> booksList = new List<string>();
-        public List<string> BooksList
+
+        private List<Book> booksList = new List<Book>();
+        public List<Book> BooksList
         {
             get { return booksList; }
             set { booksList = value; }
@@ -34,13 +35,27 @@ namespace openlabik_11._0000000
             get { return numberOfStudents; } set { numberOfStudents = value; }
             
         }
-        /// <summary>
-        /// method that returns customised strings
-        /// </summary>
-        /// <returns></returns>
-        public override string ToString()
+       
+
+            /// <summary>
+            /// method that returns customised strings
+            /// </summary>
+            /// <returns></returns>
+            public override string ToString()
         {
-            return String.Format($"\n{numberOfBooks}\n{NumberOfStudents}\n{booksList}\n{StudentsList}\n");
+            string booksFromList = String.Empty;
+            string studentsFromList = String.Empty;
+
+            foreach (var x in studentsList)
+            {
+                studentsFromList += x + " ";
+            }
+
+            foreach (var x in booksList)
+            {
+                booksFromList += x + " ";
+            }
+            return String.Format($"\n{this.numberOfBooks}\n{this.NumberOfStudents}\n{booksFromList}\n{studentsFromList}\n");
         }
     }
 }

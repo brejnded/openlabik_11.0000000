@@ -18,6 +18,7 @@ namespace openlabik_11._0000000
         ///  this list contains categories
         /// </summary>
         public static List<string> categoryList = new List<string>() { "detské", "romantické", "náučné", "sci-fi", "dobrodružné" };
+        private List<Book> books = new List<Book>();
 
         /// <summary>
         /// non-parametric constructor
